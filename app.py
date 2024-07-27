@@ -9,9 +9,11 @@ from langchain.chains.question_answering import load_qa_chain
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
+
 load_dotenv()
 
 GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+
 
 def get_pdf_text(pdf_docs):
     text = ""
@@ -21,15 +23,18 @@ def get_pdf_text(pdf_docs):
             text += page.extract_text()
     return text
 
+
 def get_text_chunks(text):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=10000, chunk_overlap=1000)
     chunks = text_splitter.split_text(text)
     return chunks
 
+
 def get_vector_store(text_chunks):
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=GOOGLE_API_KEY)
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
     vector_store.save_local("faiss_index")
+
 
 template = """
 You are a chatbot having a conversation with a human.
@@ -40,16 +45,19 @@ context: \n{context}\n
 question: \n{question}\n
 Answer:"""
 
+
 def get_conversational_chain():
     model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.5)
     prompt = PromptTemplate(input_variables=["question", "context"], template=template)
     chains = load_qa_chain(model, chain_type="stuff", prompt=prompt)
     return chains
 
+
 def load_faiss_index(pickle_file):
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     faiss_index = FAISS.load_local(pickle_file, embeddings=embeddings, allow_dangerous_deserialization=True)
     return faiss_index
+
 
 def user_input(user_question):
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
@@ -68,6 +76,7 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
+
 with st.sidebar:
     st.title("Upload PDF")
     pdf_docs = st.file_uploader("Upload your PDF files and click on the Analyze Button", type=["pdf"], accept_multiple_files=True)
@@ -78,6 +87,7 @@ with st.sidebar:
             text_chunks = get_text_chunks(raw_text)
             vector_store = get_vector_store(text_chunks)
             st.success("VectorDB Uploading Successful!!")
+
 
 def main(): 
     st.header("🤖 Chat with PDF 📚")
