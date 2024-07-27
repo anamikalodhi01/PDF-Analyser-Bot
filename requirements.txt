@@ -2,9 +2,9 @@ streamlit
 os
 google-generativeai
 python-dotenv
-langchain_community
+langchain-community
 langchain-chains
 PyPDF2
 faiss-cpu
-langchain_core
-langchain_google_genai
+langchain-core
+langchain-google-genai
