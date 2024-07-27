@@ -8,10 +8,12 @@ This project implements a chatbot that can interact with multiple PDF documents 
 - **os**
 - **google-generativeai**
 - **python-dotenv**
-- **langchain_community**
+- **langchain-community**
+- **langchain-chains**
 - **PyPDF2**
-- **langchain_core**
-- **langchain_google_genai**
+- **faiss-cpu**
+- **langchain-core**
+- **langchain-google-genai**
 
 ## Features
 - **Natural Language Processing: Utilizes the Langchain framework and Gemini Pro API for understanding and generating human-like responses.**
