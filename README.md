@@ -34,7 +34,7 @@ This project implements a chatbot that can interact with multiple PDF documents 
 - **Upload one or more PDF files.**
 - **Type your question in the input field and click "Submit" to get a response from the chatbot.**
 
-## Linkedin Profile link 
+## Linkedin Post link 
 https://www.linkedin.com/posts/anamika-lodhi-b3a9a2289_al-langchain-geminiapi-activity-7222491940473167872-UeB1?utm_source=share&utm_medium=member_desktop
 
 ## Screen Recording of the ChatBot
