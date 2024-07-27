@@ -3,18 +3,6 @@
 ## Overview
 This project implements a chatbot that can interact with multiple PDF documents in a natural and coherent manner using a large language model (LLM) such as Gemini Pro. The chatbot is designed to understand and respond to various user queries, generate summaries, and provide insightful responses based on the content of the uploaded PDFs.
 
-## Installed modules
-- ﻿**streamlit**
-- **os**
-- **google-generativeai**
-- **python-dotenv**
-- **langchain-community**
-- **langchain-chains**
-- **PyPDF2**
-- **faiss-cpu**
-- **langchain-core**
-- **langchain-google-genai**
-
 ## Features
 - **Natural Language Processing: Utilizes the Langchain framework and Gemini Pro API for understanding and generating human-like responses.**
 - **PDF Interaction: Capable of processing and interacting with multiple uploaded PDF documents.**
@@ -26,15 +14,36 @@ This project implements a chatbot that can interact with multiple PDF documents 
 - **Implement semantic search to enhance the chatbot's ability to retrieve relevant information.**
 - **Ensure the chatbot can generate summaries and respond coherently to user queries.**
 
-## Technical Details
-- **Langchain Framework: Used to integrate with various LLMs and manage the interaction flow.**
-- **Vector Database: Used for storing and retrieving document embeddings to facilitate semantic search.**
-- **Gemini Pro API: Provides the underlying NLP capabilities for the chatbot.**
+## Installation
 
-# Interact with the Chatbot
-- **Open your preferred chat interface.**
-- **Upload one or more PDF files.**
-- **Type your question in the input field and click "Submit" to get a response from the chatbot.**
+1. **Clone the Repository**
+   ```bash
+   git clone <https://github.com/anamikalodhi01/AI-Chat-Bot.git>
+   cd <repository-directory>
+
+2. **Set Up a Virtual Environment**
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows use `env\Scripts\activate`
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+ 
+4. **Set Up Environment Variables**
+    Create a .env file in the project root directory.
+    Add your Gemini Pro API key to the .env file:
+    GEMINI_API_KEY=your_api_key_here
+
+## Usage
+ 
+1. **Run the Streamlit App**
+    ```bash
+    streamlit run app.py
+
+2. **Interact with the Chatbot**
+   Open your web browser and go to http://localhost:8501.
+   Upload one or more PDF files. Type your question in the input field and click "Submit" to get a response from the chatbot.
 
 ## Linkedin Post link 
 https://www.linkedin.com/posts/anamika-lodhi-b3a9a2289_al-langchain-geminiapi-activity-7222491940473167872-UeB1?utm_source=share&utm_medium=member_desktop
