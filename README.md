@@ -1,7 +1,7 @@
 # PDF Chat Bot using Langchain Framework
 
 ## Overview
-This project implements a chatbot that can interact with multiple PDF documents in a natural and coherent manner using a large language model (LLM) such as Gemini Pro. The chatbot is designed to understand and respond to various user queries, generate summaries, and provide insightful responses based on the content of the uploaded PDFs.
+### This project implements a chatbot that can interact with multiple PDF documents in a natural and coherent manner using a large language model (LLM) such as Gemini Pro. The chatbot is designed to understand and respond to various user queries, generate summaries, and provide insightful responses based on the content of the uploaded PDFs.
 
 ## Features
 - **Natural Language Processing: Utilizes the Langchain framework and Gemini Pro API for understanding and generating human-like responses.**
