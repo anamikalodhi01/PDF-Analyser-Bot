@@ -3,7 +3,7 @@
 ## Overview
 This project implements a chatbot that can interact with multiple PDF documents in a natural and coherent manner using a large language model (LLM) such as Gemini Pro. The chatbot is designed to understand and respond to various user queries, generate summaries, and provide insightful responses based on the content of the uploaded PDFs.
 
-## Installed modules**
+## Installed modules
 ﻿**streamlit**
 **google-generativeai**
 **python-dotenv**
