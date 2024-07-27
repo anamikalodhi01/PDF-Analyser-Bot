@@ -12,7 +12,7 @@ This project implements a chatbot that can interact with multiple PDF documents 
 - **langchain_core**
 - **langchain_google_genai**
 
-##Features
+## Features
 - **Natural Language Processing: Utilizes the Langchain framework and Gemini Pro API for understanding and generating human-like responses.**
 - **PDF Interaction: Capable of processing and interacting with multiple uploaded PDF documents.**
 - **Semantic Search: Employs a Vector Database for efficient and relevant information retrieval from the PDFs.**
