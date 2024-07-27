@@ -5,6 +5,7 @@ This project implements a chatbot that can interact with multiple PDF documents 
 
 ## Installed modules
 - ﻿**streamlit**
+- **os**
 - **google-generativeai**
 - **python-dotenv**
 - **langchain_community**
