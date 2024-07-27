@@ -32,7 +32,7 @@ This project implements a chatbot that can interact with multiple PDF documents 
 - **Gemini Pro API: Provides the underlying NLP capabilities for the chatbot.**
 
 # Interact with the Chatbot
-- **Open your web browser and go to http://localhost:8502/**
+- **Open your web browser and go to http://localhost:8501/**
 - **Upload one or more PDF files.**
 - **Type your question in the input field and click "Submit" to get a response from the chatbot.**
 
