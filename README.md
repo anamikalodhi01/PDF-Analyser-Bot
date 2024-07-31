@@ -48,7 +48,7 @@
 ## Linkedin Post link 
 https://www.linkedin.com/posts/anamika-lodhi-b3a9a2289_al-langchain-geminiapi-activity-7222491940473167872-UeB1?utm_source=share&utm_medium=member_desktop
 
-## Screen Recording of the ChatBot
+## Screen Recording of the PDF Chat Bot
 https://github.com/user-attachments/assets/41800961-bea2-4469-91c8-3bcd69fc2cbb
 
 
